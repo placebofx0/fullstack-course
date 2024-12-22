@@ -3,6 +3,10 @@ import useRepos from '#app/di/repositories';
 import useServices from '#app/di/services';
 import useServers from '#app/di/servers';
 
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const { profileRepo, userRepo, portfolioRepo } = useRepos({
     db: {
         mongo: {
