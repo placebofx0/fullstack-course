@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
 
-export default (url, options) => {
-    return mongoose.createConnection(url, options);
+export default (uri, options) => {
+    return mongoose.createConnection(uri, options);
 }
