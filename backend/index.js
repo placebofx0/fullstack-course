@@ -1,7 +1,4 @@
-require('dotenv').config();
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URI);
-//import 'dotenv/config';
+import 'dotenv/config';
 import useRepos from '#app/di/repositories';
 import useServices from '#app/di/services';
 import useServers from '#app/di/servers';
